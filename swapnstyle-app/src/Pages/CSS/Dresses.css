@@ -1,0 +1,153 @@
+.dresses-title h1{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 4px;
+  font-family: 'Cinzel', serif;
+  font-weight: 300;  
+  color:#565656;
+  font-size: 30px;
+}
+
+.dresses-title hr{   
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 15px;
+  height: 1px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  background: #8d8d8d;
+}
+
+.sortinfo{
+  display: flex;
+  margin: 0 280px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.sortinfo p{
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: #565656;
+}
+
+.sortinfo p span{
+  font-weight: bold;
+}
+
+.sort-btn select{   
+  padding-left: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border: 1px solid #565656;
+  border-radius: 75px;
+  color: #716b6b;
+  background-color: #F4F4F4; 
+  font-family: 'Lato', sans-serif;
+}
+
+.dresses{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dress-item{
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+ gap: 80px;
+}
+
+
+.loadmore-btn{
+  margin-top: 100px;
+  width: 160px;
+  height: 40px;
+  outline: none;
+  border: 1px solid #716b6b;
+  border-radius: 75px;
+  color: #716b6b;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Lato', sans-serif;
+  background-color: #F4F4F4;
+  cursor: pointer; 
+}
+
+.loadmore-btn:hover{
+  background:#ffba86;
+  color: white;
+  border: none;
+}
+
+@media (max-width:1380px){
+
+  .sortinfo{
+   margin: 30px 133px;
+  }
+
+  .dress-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    margin: 0 120px;
+    gap: 35px; 
+  }
+
+}
+@media (max-width:1040px){
+  
+  .sortinfo{
+   margin: 30px 98px;
+  }
+
+  .dress-item {   
+    margin: 0 20px;
+    gap: 64px; 
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+@media (max-width:480px){
+ .dresses-title{
+  font-size: 20px;
+ }
+
+ .dress-item{
+  gap:24px;
+  margin: 0 35px;
+ }
+
+ hr{
+  width: 100px;
+  margin-top: 10px;
+ }
+
+ .sortinfo{
+  align-items: center;
+  margin: 30px 37px;
+ }
+
+ .sortinfo p{
+  font-size: 14px;
+ }
+
+ .sort-btn select{
+  font-size: 12px;
+ 
+ }
+
+ .loadmore-btn{
+  width: 120px;
+  height: 30px;
+  font-size: 16px;
+ }
+
+ .loadmore-btn{
+  margin-top: 55px;
+ }
+}

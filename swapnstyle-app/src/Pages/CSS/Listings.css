@@ -1,0 +1,12 @@
+.listings {
+  display: flex;  
+
+
+
+}
+
+@media (max-width:800px){
+  .listings{
+    flex-direction: column;
+  }
+}

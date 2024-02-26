@@ -1,0 +1,147 @@
+
+
+.list-product{
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  margin: 30px;
+  border-radius: 6px;
+  background:#F4F4F4;
+  width: 100%;
+}
+
+.list-product h1{
+  font-size: 30px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  font-weight: 300;
+  font-family: 'Cinzel', serif;
+  color: #565656;
+}
+
+.listproduct-info-main {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 1fr 1fr;
+  gap:5px;
+  width: 75%;
+  padding: 20px 0px;
+  color: #565656;
+  font-size: 15px;  
+  align-items: center;
+  margin-left: 70px;  
+}
+
+
+.listproduct-info-main h2{
+  font-weight: 400;
+}
+.listproduct-info-main p{
+  font-size: 20px;
+}
+
+hr{
+  width: 73%;
+  height: 3px;
+  margin-bottom: 10px;
+  background: #e2e2e2;
+  border: 0;
+}
+
+
+.listproduct-info {
+  align-items: center;
+  font-weight: 500;
+}
+.listproduct-product-icon{
+  height: 100px;
+}
+.remove-icon{
+cursor: pointer;  
+}
+
+.remove-icon:hover{
+  color: #ff5656;
+}
+
+
+.edit-icon{
+  cursor: pointer;
+  font-size: 22px;
+  color: #565656;
+}
+
+.edit-icon:hover{
+  color: #ff5656;
+}
+
+@media (max-width:1200px){
+  .list-product{
+    box-sizing: border-box;
+    width: 95%;
+    padding: 30px 0px;
+    margin: 20px;
+  }
+
+  .listproduct-info-main h2{
+    font-size: 20px;
+  }  
+}
+
+@media (max-width:865px){
+  .list-product{
+    width: 90%;
+    padding: 30px 0px;
+    margin: 20px;
+   }
+
+  .listproduct-info-main {
+    gap:23px;
+    margin-left: 34px;
+  }  
+  .listproduct-info-main h2{
+    font-size: 20px;
+  }  
+  hr{
+    width: 80%;
+    margin-right: 60px;
+  }
+  .listproduct-product-icon{
+    height: 80px;
+  }
+}
+
+@media (max-width:480px){
+  .list-product h1{
+    margin: 0;
+    font-size: 20px;
+  }
+ 
+  .listproduct-info-main {
+    gap:23px;
+    margin-left: 34px;
+    width: 97%;
+    margin-right: 30px;
+  }  
+  .listproduct-info-main h2{
+    font-size: 12px;
+  }  
+  .listproduct-info-main p{
+    font-size: 12px;
+  }  
+  .list-product hr{
+    width: 130%;
+  }
+  .remove-icon{
+    font-size: 12px;
+  }
+
+  .edit-icon{
+    font-size: 12px;
+    margin-left: 10px;
+  }
+
+  .listproduct-product-icon{
+    height: 50px;
+  }
+
+}

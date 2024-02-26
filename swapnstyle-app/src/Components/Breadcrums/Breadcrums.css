@@ -1,0 +1,34 @@
+.breadcrum{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 60px;
+  margin-left: 323px;
+  margin-bottom: 20px;  
+}
+
+@media (max-width:1380px){
+  .breadcrum{
+    margin-left: 180px;    
+  }
+}
+@media (max-width:1240px){
+  .breadcrum{
+    margin-left: 140px;    
+  }
+}
+
+@media (max-width:1040px){
+  .breadcrum{
+    margin-left: 120px;
+    font-size: 16px;
+  }
+}
+@media (max-width:480px){
+  .breadcrum{
+    margin-left: 69px;
+    font-size: 12px;
+  }
+}
